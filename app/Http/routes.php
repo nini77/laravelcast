@@ -12,41 +12,6 @@
 */
 
   Route::get('/', 'WelcomeController@index');
-// Route::get('about','PagesController@about');
-// Route::get('contact','PagesController@contact');
-// Route::get('articles','ArticlesController@index');
-// Route::get('articles/create','ArticlesController@create');
-// Route::get('articles/{id}','ArticlesController@show');
-// Route::post('articles','ArticlesController@store');
-
-  // class Baz{};
-  //
-  // class Bar {
-  //
-  //   private $baz;
-  //   public function __construct(Baz $baz)
-  //   {
-  //     $this->baz = $baz;
-  //   }
-  // };
-
-  // interface BarInterface {}
-  // class Bar implements BarInterface{}
-  // class SecondBar implements BarInterface{}
-  //
-  // App::bind('BarInterface','SecondBar');
-  //
-  // // App::bind('BarInterface', function()
-  // // {
-  // //   return new Bar;
-  // // });
-  //
-  // Route::get('foo','fooController@foo');
-  //
-  // Route::get('bar',function(BarInterface $bar){
-  //   dd($bar);
-  // });
-  //
   Route::post('articles/createConfirm','ArticlesController@createConfirm');
   Route::get('articles/tags', 'ArticlesController@tags');
   Route::resource('articles','ArticlesController');
