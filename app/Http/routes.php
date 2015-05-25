@@ -47,7 +47,7 @@
   //   dd($bar);
   // });
   //
-  Route::get('articles/createConfirm','ArticlesController@createConfirm');
+  Route::post('articles/createConfirm','ArticlesController@createConfirm');
   Route::get('articles/tags', 'ArticlesController@tags');
   Route::resource('articles','ArticlesController');
   Route::get('tags/{tags}','TagsController@show');
