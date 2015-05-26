@@ -147,7 +147,7 @@ return [
 		'App\Providers\RouteServiceProvider',
 		'App\Providers\ViewComposerServiceProvider',
 		'Laracasts\Flash\FlashServiceProvider',
-		// 'Barryvdh\Debugbar\ServiceProvider',
+		'Barryvdh\Debugbar\ServiceProvider',
 	],
 
 	/*
