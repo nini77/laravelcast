@@ -31,3 +31,9 @@ fieldset[disabled] .form-control {
   background-color: #E8ECEF;
   opacity: 1;
 }
+
+/*for vue.js*/
+li.done {
+  color: #7f8c8d;
+  text-decoration: line-through;
+}

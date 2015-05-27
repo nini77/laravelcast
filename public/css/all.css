@@ -6274,4 +6274,10 @@ fieldset[disabled] .form-control {
   opacity: 1;
 }
 
+/*for vue.js*/
+li.done {
+  color: #7f8c8d;
+  text-decoration: line-through;
+}
+
 /*# sourceMappingURL=all.css.map */

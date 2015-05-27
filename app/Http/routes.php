@@ -17,6 +17,10 @@
   Route::resource('articles','ArticlesController');
   Route::get('tags/{tags}','TagsController@show');
 
+  //for Vue.js
+
+  Route::resource('vue','VueController');
+
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',

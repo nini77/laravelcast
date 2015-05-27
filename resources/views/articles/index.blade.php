@@ -1,4 +1,4 @@
-@extends('app2')
+@extends('appVue')
 
 @section('content')
   <h1>Synchro Articles</h1>
