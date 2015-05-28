@@ -18,11 +18,13 @@
   Route::get('tags/{tags}','TagsController@show');
 
   //for Vue.js
-
   Route::resource('vue','VueController');
+  Route::get('vue2','VueController@index2');
+  Route::get('vue3','VueController@index3');
+  Route::get('vue4','VueController@index4');
+  Route::get('vue5','VueController@index5');
 
-
-Route::controllers([
-	'auth' => 'Auth\AuthController',
-	'password' => 'Auth\PasswordController',
-]);
+  Route::controllers([
+  	'auth' => 'Auth\AuthController',
+  	'password' => 'Auth\PasswordController',
+  ]);

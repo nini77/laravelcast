@@ -18,6 +18,44 @@ class VueController extends Controller {
 	}
 
 	/**
+	 * Display a listing of the resource.
+	 *
+	 * @return Response
+	 */
+	public function index2()
+	{
+		return view('vue.index2');
+	}
+	/**
+	 * Display a listing of the resource.
+	 *
+	 * @return Response
+	 */
+	public function index3()
+	{
+		return view('vue.formbind');
+	}
+	/**
+	 * Display a listing of the resource.
+	 *
+	 * @return Response
+	 */
+	public function index4()
+	{
+		return view('vue.renderingList');
+	}
+
+	/**
+	* Display a listing of the resource.
+	*
+	* @return Response
+	*/
+	public function index5()
+	{
+		return view('vue.eventSystem');
+	}
+
+	/**
 	 * Show the form for creating a new resource.
 	 *
 	 * @return Response

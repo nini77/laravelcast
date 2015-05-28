@@ -32,6 +32,22 @@
         @if (isset($edit))
           <li><a href="/articles/{{$article->id}}/edit">Edit </a></li>
         @endif
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Vue.js <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li class="divider"></li>
+            <li><a href="vue">quick example</a></li>
+            <li class="divider"></li>
+            <li><a href="vue2">example2</a></li>
+            <li class="divider"></li>
+            <li><a href="vue3">formBind laracast</a></li>
+            <li class="divider"></li>
+            <li><a href="vue4">renderingList laracast</a></li>
+            <li class="divider"></li>
+            <li><a href="vue5">eventSystem laracast</a></li>
+            <li class="divider"></li>
+          </ul>
+        </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         @if (Auth::check())

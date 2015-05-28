@@ -17,21 +17,20 @@
     @yield('content')
 
   </div>
-    {{-- // <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script> --}}
-
     {{-- // <script> --}}
         {{-- // $('#flash-overlay-modal').modal(); --}}
         {{-- // $('div.alert').not('.alert-important').delay(3000).slideUp(300); --}}
     {{-- </script> --}}
 
     <script src="/js/all.js"></script>
-    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 
     <!-- for vue.js -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/vue/0.11.10/vue.min.js"></script>
     <script src="/js/vueSam.js"></script>
-
-    {{-- // <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> --}}
+    <script src="/js/vueSam2.js"></script>
+    <script src="/js/inputbind.js"></script>
+    <script src="/js/renderingList.js"></script>
+    <script src="/js/eventSystem.js"></script>
     @yield('footer')
 </body>
 </html>
