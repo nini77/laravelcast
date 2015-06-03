@@ -7,7 +7,7 @@
   </p>
   <hr/>
   <div id="demo3" class="container">
-    <input v-model="name" >
+    <input v-model="name">
     <pre>@{{$data | json }}</pre>
   </div>
 

@@ -17,15 +17,24 @@
     @yield('content')
 
   </div>
-    {{-- // <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script> --}}
-
-    {{-- // <script> --}}
-        {{-- // $('#flash-overlay-modal').modal(); --}}
-        {{-- // $('div.alert').not('.alert-important').delay(3000).slideUp(300); --}}
-    {{-- </script> --}}
 
     <script src="/js/all.js"></script>
-    {{-- // <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> --}}
+    <script src="//cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js"></script>
+
+    <script type="text/javascript">
+      // for edit only
+      $('#editArticlebtn').click(function(){
+        bootbox.confirm("Are you sure?", function(result) {
+            if(result){
+              $('#editArticle').submit();
+            }
+          }
+        )
+        return false;
+       });
+
+    </script>
+
     @yield('footer')
 </body>
 </html>

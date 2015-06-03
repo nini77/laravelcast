@@ -37,13 +37,9 @@
 @if(isset($backTo))
 </div>
 @endif
-
 <div class="form-group">
-  {!! Form::submit($submitButtonText,['class' => $submitClass ]) !!}
+  {!! Form::submit($submitButtonText,['class' => $submitClass ,'id' => $id ]) !!}
 </div>
-
-
-
 @section('footer')
 
 <script type="text/javascript">
