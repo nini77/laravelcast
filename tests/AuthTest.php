@@ -9,7 +9,8 @@ use Laracasts\Integrated\Services\Laravel\DatabaseTransactions;
 class AuthTest extends TestCase
 {
 
-  use DatabaseTransactions;
+  use DatabaseTransactions,RegisterUsers;
+
 
   	/** @test */
   public function it_registers_a_user()
@@ -36,20 +37,5 @@ class AuthTest extends TestCase
   {
     TestDummy::create('App\User',$overrides);
   }
-
-  protected function register(array $overrides = [])
-  {
-    $fields = $this->getRegisterFields($overrides);
-    return $this->visit('auth/register')
-                ->andSubmitForm('Register',$fields);
-  }
-
-  protected function getRegisterFields(array $overrides)
-  {
-    $user = TestDummy::attributesFor('App\User',$overrides);
-    return $user + ['password_confirmation' => $user['password']];
-
-  }
-
 
 }
