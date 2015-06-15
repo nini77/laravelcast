@@ -20,7 +20,6 @@ class AuthTest extends TestCase
     $this->register($credentials)
         ->verifyInDatabase('users',$credentials)
         ->andSeePageIs('/articles');
-        ->andSeePageIs('/articles');
   }
 	/** @test */
   public function it_registers_a_user_of_registration_errors()
